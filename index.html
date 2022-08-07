@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+
+        <link rel="stylesheet" href="CSS/Normalize.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/master.css">
+    </head>
+    <body>
+        <div class="memoryGame">
+
+            <div class="button-start">
+                <span>Start Game</span>
+            </div>
+
+            <div class="info">
+                <div class="name">Hello: <span></span></div>
+                <div class="trayes">Wrong Traies: <span>0</span></div>
+            </div>
+
+            <div class="blocksContaner">
+                <div class="block" data-vero="faceboock">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+                <div class="block" data-vero="faceboock">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+
+                <div class="block" data-vero="messenger">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-facebook-messenger"></i></div>
+                </div>
+                <div class="block" data-vero="messenger">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-facebook-messenger"></i></div>
+                </div>
+
+                <div class="block" data-vero="twitter">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+                <div class="block" data-vero="twitter">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+
+                <div class="block" data-vero="google">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-gofore"></i></div>
+                </div>
+                <div class="block" data-vero="google">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-gofore"></i></div>
+                </div>
+
+                <div class="block" data-vero="plant">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-seedling"></i></div>
+                </div>
+                <div class="block" data-vero="plant">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-seedling"></i></div>
+                </div>
+
+                <div class="block" data-vero="child">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-child-reaching"></i></div>
+                </div>
+                <div class="block" data-vero="child">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-child-reaching"></i></div>
+                </div>
+
+                <div class="block" data-vero="github">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-github"></i></div>
+                </div>
+                <div class="block" data-vero="github">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-github"></i></div>
+                </div>
+
+                <div class="block" data-vero="castle">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-fort-awesome"></i></div>
+                </div>
+                <div class="block" data-vero="castle">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-brands fa-fort-awesome"></i></div>
+                </div>
+
+                <div class="block" data-vero="fire">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-fire"></i></div>
+                </div>
+                <div class="block" data-vero="fire">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-fire"></i></div>
+                </div>
+
+                <div class="block" data-vero="smile">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-face-smile-wink"></i></div>
+                </div>
+                <div class="block" data-vero="smile">
+                    <div class="face Front"></div>
+                    <div class="face back"><i class="fa-solid fa-face-smile-wink"></i></div>
+                </div>
+            </div>
+
+            <audio id="nice" src="audios/nice.mp4" preload="auto"></audio>
+            <audio id="error" src="audios/error.mp4" preload="auto"></audio>
+            <audio id="play" src="audios/playing-music.mp3" preload="auto"></audio>
+        </div>
+        <script src="JS/main.js"></script>
+    </body>
+</html>

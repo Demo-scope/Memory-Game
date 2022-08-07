@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+.memoryGame .button-start {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 169, 244, 0.9);
+    z-index: 2;
+}
+.memoryGame .button-start span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: #fff;
+    padding: 15px 25px ;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.memoryGame{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.memoryGame .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f5f6f7;
+    border: 2px solid #2196f3;
+    margin-bottom: 10px;
+}
+
+.memoryGame .blocksContaner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.memoryGame .blocksContaner.noClick {
+    pointer-events: none;
+}
+.memoryGame .blocksContaner .block {
+    flex-basis: calc(20% - 9.6px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 210px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1s ;
+}
+.memoryGame .blocksContaner .block.good,
+.memoryGame .blocksContaner .block.is-flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.memoryGame .blocksContaner .block .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    border: 4px solid #2196f3;
+
+    backface-visibility: hidden;
+}
+.memoryGame .blocksContaner .block .Front{
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+.memoryGame .blocksContaner .block .Front::before {
+    content: "?";
+    color: white;
+    font-size: 140px;
+    font-weight: bold;
+}
+.memoryGame .blocksContaner .block .back{
+    background-color: #607d88;
+    transform: rotateY(180deg);
+}
+.memoryGame .blocksContaner .block .back i{
+    font-size: 95px;
+}
